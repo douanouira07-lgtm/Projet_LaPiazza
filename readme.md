@@ -18,7 +18,7 @@ Le site contient 4 pages principales :
 ## Technologies utilisées
 
 - HTML5
-- CSS
+- CSS(3 version : v1_traditionel/v2_felexbox/v3_grid)
 - JavaScript 
 - Git et GitHub pour la gestion du projet.
 

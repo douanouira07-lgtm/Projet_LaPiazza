@@ -1,0 +1,331 @@
+* { margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+ }
+body { 
+  background: #f5f0ea; 
+  padding: 20px; 
+}
+.container { 
+  max-width: 1100px; 
+  margin: auto; 
+  background: #fdfaf7; 
+  border-radius: 20px; 
+  overflow: hidden; 
+}
+
+/* HEADER - traditionnel */
+.header {
+  background: white; 
+  padding: 15px 25px; 
+  text-align: center; 
+  overflow: hidden; 
+}
+.logo { 
+  float: left;
+  text-align: left; 
+}
+.logo-title { 
+  color: #c0392b; 
+  font-weight: bold; 
+  font-size: 12px; 
+}
+.logo-subtitle { 
+  font-size: 11px; 
+  font-weight: bold; }
+.nav { display: inline-block; 
+  margin-top: 10px; 
+}
+.nav a { 
+  text-decoration: none; 
+  color: #555; 
+  font-size: 11px; 
+  font-weight: bold; 
+  margin: 0 8px; 
+}
+.nav-active { 
+  background: #c0392b; 
+  color: white !important; 
+  padding: 7px 12px; 
+  border-radius: 6px; 
+}
+.header-right { 
+  float: right; 
+  margin-top: 10px; 
+  font-size: 11px; 
+}
+.header-right .phone { 
+  margin-right: 10px; 
+}
+.btn { 
+  background: #c0392b; 
+  color: white; 
+  border: none; 
+  padding: 10px 18px; 
+  border-radius: 8px; 
+  font-weight: bold; 
+  cursor: pointer; 
+}
+
+/* HERO */
+.hero { 
+  text-align: center; 
+  padding: 35px 20px 10px; 
+}
+.badge { 
+  display: inline-block; 
+  background: #f7e8e3; 
+  color: #c0392b; 
+  font-size: 10px; 
+  font-weight: bold; 
+  padding: 6px 12px; 
+  border-radius: 20px; 
+}
+.hero-title { 
+  font-size: 42px; 
+  margin: 15px 0 10px; 
+}
+.hero-text { 
+  color: #777; 
+  font-size: 13px; 
+  line-height: 1.6; 
+}
+.infos {
+   margin-top: 20px; 
+   font-size: 11px; 
+   color: #777; 
+  }
+.infos span { 
+  display: inline-block; 
+  margin: 0 12px; 
+}
+.filters { 
+  margin-top: 20px; 
+}
+.filters button { 
+  display: inline-block; 
+  background: #fdf0ea; 
+  border: none; 
+  padding: 10px 18px; 
+  border-radius: 10px; 
+  cursor: pointer; 
+  font-size: 12px; 
+  margin: 0 5px; 
+}
+.filter-active { 
+  background: #c0392b !important; 
+  color: white; 
+}
+
+/* MENU - HNA L 7AL B TRADITIONNEL */
+.menu {
+  text-align: center;
+  padding: 20px;
+  font-size: 0; /* bech na7iw l espace bin l inline-block */
+}
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  margin: 0 1% 20px 1%;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  text-align: left;
+  font-size: 14px; /* narj3ou l taille */
+}
+.card-image { 
+  position: relative; 
+}
+.card-image img { 
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+  display: block; 
+}
+.tag { 
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  background: white; 
+  font-size: 9px; 
+  font-weight: bold; 
+  padding: 5px 8px; 
+  border-radius: 5px; 
+}
+.tag-red { 
+  background: #c0392b; 
+  color: white; 
+}
+.tag-white { 
+  background: white; 
+  color: #333; 
+}
+.card-info { 
+  position: absolute; 
+  bottom: 10px; 
+  right: 10px; 
+  background: rgba(0,0,0,0.7); 
+  color: white; 
+  font-size: 9px; 
+  padding: 4px 8px; 
+  border-radius: 10px; 
+}
+.card-content { 
+  padding: 15px; 
+}
+.card-top { 
+  overflow: hidden; 
+}
+.card-top h3 { 
+  float: left; 
+  font-size: 14px; 
+  max-width: 70%; 
+}
+.price { 
+  float: right; 
+  color: #c0392b; 
+  font-weight: bold; 
+  font-size: 14px; 
+}
+.card-content p { 
+  clear: both; 
+  font-size: 11px; 
+  color: #888; 
+  line-height: 1.5; 
+  padding-top: 10px; 
+}
+.card-bottom { 
+  overflow: hidden; 
+  margin-top: 15px; 
+  font-size: 10px; 
+  color: #777; 
+}
+.card-bottom span { 
+  float: left; 
+  margin-top: 8px; 
+}
+.btn-plus { 
+  float: right; 
+  background: #fdf0ea; 
+  border: 1px solid #eee; 
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%; 
+  cursor: pointer; 
+  font-size: 16px; 
+}
+
+/* SAVOIR-FAIRE */
+.savoir { 
+  background: #fdf0ea; 
+  margin: 10px 20px; 
+  padding: 20px; 
+  border-radius: 15px; 
+  overflow: hidden; 
+}
+.savoir-left { 
+  float: left; 
+  width: 70%; 
+  text-align: left; 
+}
+.savoir-left p { 
+  font-size: 11px; 
+  color: #777; 
+  line-height: 1.5; 
+  margin-top: 5px; 
+}
+.savoir-icon { 
+  float: left; 
+  margin-right: 15px; 
+  font-size: 22px; 
+}
+.savoir-right { 
+  float: right; 
+  width: 25%; 
+  font-size: 11px; 
+  text-align: right; 
+}
+
+/* CTA */
+.cta { 
+  background: #f9dcd3; 
+  text-align: center; 
+  padding: 45px 20px; 
+  margin-top: 20px; 
+}
+.cta h2 { 
+  font-size: 28px; 
+  max-width: 500px; 
+  margin: 12px auto; 
+}
+.cta p { 
+  font-size: 12px; 
+  color: #777; 
+  max-width: 500px; 
+  line-height: 1.6; 
+  margin: auto; 
+}
+.cta-buttons { 
+  margin-top: 15px; 
+}
+.cta-buttons .btn { 
+  display: inline-block; 
+  margin: 0 5px; 
+}
+.btn-white { 
+  display: inline-block; 
+  background: white; 
+  border: none; 
+  padding: 10px 18px; 
+  border-radius: 8px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  margin: 0 5px; 
+}
+.cta-small { 
+  margin-top: 15px; 
+  font-size: 10px !important; 
+}
+
+/* FOOTER */
+.footer { 
+  background: #3b231d; 
+  color: white; 
+  padding: 35px 30px; 
+  text-align: center; 
+  font-size: 0; 
+}
+.footer-col { 
+  display: inline-block; 
+  vertical-align: top; 
+  width: 23%; 
+  margin: 0 1%; 
+  text-align: left; 
+  font-size: 14px; 
+}
+.footer-col h3 { 
+  font-size: 14px; 
+  margin-bottom: 10px; 
+}
+.footer-col p { 
+font-size: 11px; 
+color: #ccc; 
+line-height: 1.7; 
+}
+.bottom-bar { 
+background: #3b231d; 
+color: #999; 
+padding: 15px 30px; 
+border-top: 1px solid #555; 
+font-size: 10px; 
+overflow: hidden; 
+}
+.bottom-bar span:first-child { 
+  float: left; 
+}
+.bottom-bar span:last-child { 
+  float: right; 
+}

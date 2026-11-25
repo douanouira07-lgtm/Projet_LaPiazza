@@ -1,4 +1,4 @@
-* { margin: 0;
+* { margin: 0; /* * tout les balises dans la pages */
   padding: 0; 
   box-sizing: border-box;
   font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@ body {
   margin: auto; 
   background: #fdfaf7; 
   border-radius: 20px; 
-  overflow: hidden; 
+  overflow: hidden; /*5abbi kol chay yo5rej barra men l boîte. W zeda, houwa l colle el*/
 }
 
 /* HEADER - traditionnel */
@@ -23,7 +23,7 @@ body {
   overflow: hidden; 
 }
 .logo { 
-  float: left;
+  float: left; /*ye logo Elsa9 3al isar, w 5alli l be9i yji jnabek.*/
   text-align: left; 
 }
 .logo-title { 
@@ -34,7 +34,8 @@ body {
 .logo-subtitle { 
   font-size: 11px; 
   font-weight: bold; }
-.nav { display: inline-block; 
+.nav { 
+  display: inline-block; 
   margin-top: 10px; 
 }
 .nav a { 
@@ -44,9 +45,9 @@ body {
   font-weight: bold; 
   margin: 0 8px; 
 }
-.nav-active { 
+.nav a.nav-active {/* bouton actif:.nav a.nav-active a9wa men .nav a*/ 
   background: #c0392b; 
-  color: white !important; 
+  color: white; 
   padding: 7px 12px; 
   border-radius: 6px; 
 }
@@ -89,7 +90,7 @@ body {
 .hero-text { 
   color: #777; 
   font-size: 13px; 
-  line-height: 1.6; 
+  line-height: 1.6; /* l'espace entre les lignes */
 }
 .infos {
    margin-top: 20px; 
@@ -113,9 +114,9 @@ body {
   font-size: 12px; 
   margin: 0 5px; 
 }
-.filter-active { 
-  background: #c0392b !important; 
-  color: white; 
+.filters button.filter-active {/*filtre actif:selector a9wa*/ 
+  background: #c0392b; 
+  color: white;
 }
 
 /* MENU - HNA L 7AL B TRADITIONNEL */
@@ -142,7 +143,7 @@ body {
 .card-image img { 
   width: 100%; 
   height: 200px; 
-  object-fit: cover; 
+  object-fit: cover; /* L'image pas d'espace*/ 
   display: block; 
 }
 .tag { 
@@ -285,9 +286,9 @@ body {
   cursor: pointer; 
   margin: 0 5px; 
 }
-.cta-small { 
+p.cta-small {/*Bouton sghir:.cta.cta-small a9wa men.cta wa7dou*/ 
   margin-top: 15px; 
-  font-size: 10px !important; 
+  font-size: 10px;
 }
 
 /* FOOTER */
@@ -323,9 +324,9 @@ border-top: 1px solid #555;
 font-size: 10px; 
 overflow: hidden; 
 }
-.bottom-bar span:first-child { 
+.bottom-bar span:first-child {/*l premier span à gauche*/ 
   float: left; 
 }
-.bottom-bar span:last-child { 
+.bottom-bar span:last-child {/*derier span à droite*/ 
   float: right; 
 }

@@ -1,4 +1,5 @@
-// ===== JS 3la 9ad HTML mte3ek - index2.html =====
+
+// ===== JS 3la 9ad HTML mte3ek - menu.html =====
 
 // --- 1. L FILTRE ---
 // L boutons mte3ek : .filters button

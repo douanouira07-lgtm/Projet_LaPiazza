@@ -47,9 +47,9 @@ body {
   font-size: 11px; 
   font-weight: bold; 
 }
-.nav-active { 
+.nav a.nav-active {/* bouton actif:.nav a.nav-active a9wa men .nav a*/
   background: #c0392b; 
-  color: white !important; 
+  color: white; 
   padding: 7px 12px; 
   border-radius: 6px; 
 }
@@ -75,7 +75,10 @@ body {
   padding: 35px 20px 10px; 
 }
 .badge { 
-  display: inline-block; 
+  display: inline-flex;/*bech l badge yo93od s8ir fi blasetha w mrigel*/
+  width: fit-content;
+  align-items: center;
+  justify-content: center; 
   background: #f7e8e3; 
   color: #c0392b; 
   font-size: 10px; 
@@ -114,8 +117,8 @@ body {
   cursor: pointer; 
   font-size: 12px; 
 }
-.filter-active { 
-  background: #c0392b !important; 
+.filters button.filter-active {/*filtre actif:selector a9wa*/ 
+  background: #c0392b; 
   color: white; 
 }
 
@@ -287,9 +290,9 @@ body {
   font-weight: bold; 
   cursor: pointer; 
 }
-.cta-small { 
+p.cta-small {/*Bouton sghir:.cta.cta-small a9wa men.cta wa7dou*/
   margin-top: 5px; 
-  font-size: 10px !important; 
+  font-size: 10px; 
 }
 
 /* FOOTER - FLEXBOX */
@@ -326,17 +329,17 @@ body {
 
 /* ===== RESPONSIVE - FLEXBOX ===== */
 
-@media (max-width: 900px) {
-  .card {
+@media (max-width: 900px) {/*Ki l ecran ywali a9al men 900px (tablette)*/
+  .card {/*Kenou 3 fi ligne, tawa waliw 2 bark (50%)*/
     flex: 0 0 calc(50% - 10px);
   }
-  .footer {
+  .footer {/*5alli l colonnes yhabto louta ki ma3adech blasa*/
     flex-wrap: wrap;
   }
-  .footer-col {
+  .footer-col {/*L footer ken 4 colonnes, tawa waliw 2*/
     flex: 0 0 calc(50% - 10px);
   }
-  .header {
+  .header {/*L header ken fi ligne wa7da, tawa ywali fou9 ba3dhou*/
     flex-direction: column;
     gap: 15px;
   }
@@ -349,15 +352,15 @@ body {
   .footer-col {
     flex: 0 0 100%;
   }
-  .savoir {
+  .savoir {/* L partie savoir, 5alliha fou9 ba3dhou */
+    flex-direction: column;/*tout ca dans le milieu*/
+    text-align: center;
+  }
+  .bottom-bar {/*L barre loutaniya, 5alliha fou9 ba3dhou zeda*/
     flex-direction: column;
     text-align: center;
   }
-  .bottom-bar {
-    flex-direction: column;
-    text-align: center;
-  }
-  .hero-title {
+  .hero-title {/*L titre l kbir, saghrou bech ma yo5rojch mel ecran*/
     font-size: 26px;
   }
 }

@@ -1,259 +1,257 @@
 <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Piazza - Réservez votre table</title>
+    
+    <!--<link rel="stylesheet" href="../css/cssReservation/style.css">-->
+   <!--<link rel="stylesheet" href="../css/cssReservation/flexbox.css">-->
+   <link rel="stylesheet" href="../css/cssReservation/grid.css">
+</head>
+<body>
 
-<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>La Piazza - Trattoria &amp; Pizzeria Napoletana</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-tint":"#b02d1c","on-surface":"#2a170f","error":"#ba1a1a","on-primary-fixed":"#400200","on-secondary-container":"#347139","surface-bright":"#fff8f6","on-tertiary-fixed-variant":"#474743","inverse-primary":"#ffb4a7","on-tertiary":"#ffffff","background":"#fff8f6","outline-variant":"#e1bfb9","surface":"#fff8f6","secondary-container":"#b0f3ad","surface-variant":"#ffdbce","on-secondary-fixed-variant":"#12521e","tertiary":"#575753","surface-container-lowest":"#ffffff","surface-container":"#ffe9e2","inverse-on-surface":"#ffede7","error-container":"#ffdad6","on-error-container":"#93000a","primary-container":"#c83e2b","tertiary-fixed-dim":"#c8c6c2","inverse-surface":"#422b22","tertiary-container":"#706f6b","surface-container-high":"#ffe2d8","surface-container-low":"#fff1ec","secondary":"#2e6b34","on-error":"#ffffff","on-secondary":"#ffffff","surface-dim":"#f8d2c4","on-primary-container":"#fff0ee","on-primary-fixed-variant":"#8e1306","on-surface-variant":"#59413d","primary-fixed-dim":"#ffb4a7","primary":"#a62515","on-background":"#2a170f","on-secondary-fixed":"#002106","tertiary-fixed":"#e5e2dd","on-tertiary-fixed":"#1c1c19","secondary-fixed":"#b0f3ad","on-primary":"#ffffff","secondary-fixed-dim":"#95d693","on-tertiary-container":"#f6f3ee","surface-container-highest":"#ffdbce","primary-fixed":"#ffdad4","outline":"#8d706b"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","space-lg":"1.5rem","margin":"3rem","gutter-mobile":"1rem","gutter":"1.5rem","margin-mobile":"1.25rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem"},"fontFamily":{"label-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-sm":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"headline-xl-mobile":["Playfair Display"],"body-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"headline-xl":["Playfair Display"],"headline-lg":["Playfair Display"]},"fontSize":{"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.04em","fontWeight":"600"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.08em","fontWeight":"500"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"0em","fontWeight":"600"}],"headline-xl-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.005em","fontWeight":"400"}],"body-md":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0em","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.06em","fontWeight":"600"}],"headline-md":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","letterSpacing":"0em","fontWeight":"400"}],"headline-xl":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_2px_12px_rgba(44,24,16,0.06)] border-b border-outline-variant/40"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"><div class="flex items-center gap-3"><img alt="Logo La Piazza" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBu0dmG4FDdSzdcMZZQ7yH67Lq7DWZAuUj_2b3Hc5jgay7qsDanWP65FvlAuxyd1vDpOTxZ0hWQXczcZqaGAcLfV6p39HV0fBPCjtJC49eEa9LpWxDl4M2q7dD_8rw5fJd45_3-lwuK5i6yABCzpSE-vk42cyjbXY17KtP3Pi3hahsKo3gVVPxh_D0N6NxlLUd81j7o4J2o-DtOq458PORSm1BClCGpzgUUipuoVXo"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight leading-none">La Piazza</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold mt-0.5">Pizzeria &amp; Ristorante</span></div></div><nav class="hidden lg:flex items-center gap-2" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg px-3 py-1.5 shadow-sm"><a class="px-3 py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="accueil" href="#">ACCUEIL</a><a class="px-3 py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="notre-menu" href="#">NOTRE MENU</a><a class="px-3 py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="reservation" href="#">RÉSERVATION</a><a class="px-3 py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="contact" href="#">CONTACT</a></nav><div class="flex items-center gap-4"><a class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" href="tel:+21671890123"><span class="material-symbols-outlined text-[18px] text-secondary">call</span><span class="font-label-sm text-label-sm font-semibold tracking-wider">+216 71 890 123</span></a><a class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg tracking-wide hover:bg-primary transition-all shadow-sm active:scale-95" data-path="reservation" href="#"><span class="material-symbols-outlined text-[18px] mr-1.5">table_restaurant</span>Réserver</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
-<!-- Subtle decorative ambient background elements -->
-<div class="relative w-full max-w-7xl mx-auto px-6 lg:px-12 py-10 lg:py-16">
-<div class="absolute -top-12 right-1/4 w-96 h-96 bg-primary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
-<div class="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
-<!-- Page Header -->
-<header class="max-w-3xl mb-12 lg:mb-16">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary mb-4">
-<span class="material-symbols-outlined text-[16px]">restaurant</span>
-<span class="font-label-sm text-label-sm uppercase tracking-widest font-semibold">Tavolo &amp; Esperienza</span>
-</div>
-<h1 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight mb-4">
-        Réservez votre table
-      </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-        Que ce soit pour un dîner romantique, un repas de famille ou entre amis, nous vous accueillons avec la chaleur et la passion de l'Italie.
-      </p>
-</header>
-<!-- Main Content: Balanced Two-Column Grid -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
-<!-- Left Column: The Reservation Form -->
-<section class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-md p-6 sm:p-10 transition-shadow">
-<div class="flex items-center justify-between pb-6 mb-8 bg-surface-container-low/60 -mx-6 -mt-6 p-6 sm:-mx-10 sm:-mt-10 sm:p-8 rounded-t-xl">
-<div>
-<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Réservation en direct</span>
-<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-0.5">Détails de votre visite</h2>
-</div>
-<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-[22px]">calendar_month</span>
-</div>
-</div>
-<form class="space-y-6" id="reservationForm" onsubmit="event.preventDefault(); handleReservationSuccess();">
-<!-- Full Name -->
-<div>
-<label class="block font-label-lg text-label-lg text-on-surface mb-2" for="fullName">
-              Nom complet <span class="text-primary">*</span>
-</label>
-<div class="relative">
-<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">person</span>
-<input class="w-full pl-11 pr-4 py-3 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-xs font-body-md text-body-md transition-all" id="fullName" name="fullName" placeholder="Ex: Mario Rossi" required="" type="text"/>
-</div>
-</div>
-<!-- Email & Phone Grid -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-<!-- Email -->
-<div>
-<label class="block font-label-lg text-label-lg text-on-surface mb-2" for="email">
-                Adresse email <span class="text-primary">*</span>
-</label>
-<div class="relative">
-<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">mail</span>
-<input class="w-full pl-11 pr-4 py-3 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-xs font-body-md text-body-md transition-all" id="email" name="email" placeholder="votre.email@exemple.com" required="" type="email"/>
-</div>
-</div>
-<!-- Phone Number -->
-<div>
-<label class="block font-label-lg text-label-lg text-on-surface mb-2" for="phone">
-                Numéro de téléphone <span class="text-primary">*</span>
-</label>
-<div class="relative">
-<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">call</span>
-<input class="w-full pl-11 pr-4 py-3 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-xs font-body-md text-body-md transition-all" id="phone" name="phone" placeholder="+216 98 123 456" required="" type="tel"/>
-</div>
-</div>
-</div>
-<!-- Date & Time Sub-grid -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-<!-- Date -->
-<div>
-<label class="block font-label-lg text-label-lg text-on-surface mb-2" for="resDate">
-                Date de réservation <span class="text-primary">*</span>
-</label>
-<div class="relative">
-<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">event</span>
-<input class="w-full pl-11 pr-4 py-3 rounded-lg bg-surface-container-lowest text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-xs font-body-md text-body-md transition-all" id="resDate" name="resDate" required="" type="date"/>
-</div>
-</div>
-<!-- Time -->
-<div>
-<label class="block font-label-lg text-label-lg text-on-surface mb-2" for="resTime">
-                Heure de réservation <span class="text-primary">*</span>
-</label>
-<div class="relative">
-<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">schedule</span>
-<select class="w-full pl-11 pr-10 py-3 rounded-lg bg-surface-container-lowest text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-xs font-body-md text-body-md appearance-none cursor-pointer transition-all" id="resTime" name="resTime" required="">
-<option disabled="" selected="" value="">Choisir une heure</option>
-<optgroup label="Déjeuner">
-<option value="12:00">12h00</option>
-<option value="12:30">12h30</option>
-<option value="13:00">13h00</option>
-</optgroup>
-<optgroup label="Dîner">
-<option value="19:30">19h30</option>
-<option value="20:00">20h00</option>
-<option value="20:30">20h30</option>
-<option value="21:00">21h00</option>
-<option value="21:30">21h30</option>
-<option value="22:00">22h00</option>
-</optgroup>
-</select>
-<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[20px]">expand_more</span>
-</div>
-</div>
-</div>
-<!-- Guests Selector -->
-<div>
-<label class="block font-label-lg text-label-lg text-on-surface mb-2" for="guests">
-              Nombre de personnes <span class="text-primary">*</span>
-</label>
-<div class="relative">
-<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">group</span>
-<select class="w-full pl-11 pr-10 py-3 rounded-lg bg-surface-container-lowest text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-xs font-body-md text-body-md appearance-none cursor-pointer transition-all" id="guests" name="guests" required="">
-<option disabled="" selected="" value="">Sélectionnez le nombre de convives</option>
-<option value="1">1 personne (Comptoir ou table intime)</option>
-<option value="2">2 personnes (Table duo)</option>
-<option value="3">3 personnes</option>
-<option value="4">4 personnes</option>
-<option value="5-8">5 à 8 personnes (Table familiale)</option>
-<option value="8+">8+ personnes (Grande tablée)</option>
-</select>
-<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[20px]">expand_more</span>
-</div>
-</div>
-<!-- Special Requests -->
-<div>
-<div class="flex items-center justify-between mb-2">
-<label class="font-label-lg text-label-lg text-on-surface" for="specialRequests">
-                Demandes spéciales <span class="text-on-surface-variant font-normal font-label-sm text-label-sm">(Optionnel)</span>
-</label>
-<span class="font-label-sm text-label-sm text-on-surface-variant">Intolérances, célébrations...</span>
-</div>
-<textarea class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-xs font-body-md text-body-md transition-all resize-none" id="specialRequests" name="specialRequests" placeholder="Allergies, table en terrasse, chaise bébé, occasion spéciale..." rows="3"></textarea>
-</div>
-<!-- Submit Button -->
-<div class="pt-2">
-<button class="w-full py-4 px-6 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-3 shadow-md hover:bg-primary hover:shadow-lg transition-all active:scale-[0.99] cursor-pointer" type="submit">
-<span class="material-symbols-outlined text-[20px]">restaurant_menu</span>
-<span>Confirmer la réservation</span>
-</button>
-</div>
-<!-- Reassurance Footer -->
-<div class="flex items-start gap-2.5 pt-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">verified_user</span>
-<p class="font-body-sm text-body-sm leading-normal">
-              Confirmation instantanée par SMS et Email • Annulation sans frais jusqu'à 2 heures à l'avance.
-            </p>
-</div>
-</form>
-<!-- Feedback Success State (Hidden by default) -->
-<div class="hidden mt-6 p-6 rounded-lg bg-secondary-fixed/50 text-on-secondary-fixed" id="reservationSuccess">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary text-[28px]">check_circle</span>
-<div>
-<p class="font-headline-sm text-headline-sm font-bold">Grazie mille !</p>
-<p class="font-body-sm text-body-sm mt-0.5">Votre table est pré-réservée. Un message de confirmation vient de vous être envoyé.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Right Column: Visual Inspiration & Dining Guidelines -->
-<aside class="lg:col-span-5 space-y-6">
-<!-- Imagery Card with Authentic Trattoria Ambience -->
-<div class="relative overflow-hidden rounded-xl shadow-md group">
-<div class="w-full h-80 sm:h-96 relative">
-<img alt="Pizza Margherita artisanale servie sur table en bois rustique à La Piazza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0oq4iGaUJEyXKm368iwt_akbmpJvhb8NfmlfCbRahrPZbOYCmqqwYdeZ3X1qHjZrraAuRc8-_7qHyn9uf8Kn1PPIeG3Xcs9t6XRN3HGurVvT_WQnS466bGO3VmTAO-pzEYrZtCbMz6J31Y_tKFg9iC-4tTs5e1ysKgmXDoHxKdDVNYy0vH7uQyRuUG9J9ltJON2vtZQUJ_NbHJC609ch1jYLrUd6_9aNr8IsgYQ"/>
-<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
-</div>
-<!-- Italian Badge Overlay -->
-<div class="absolute top-4 left-4">
-<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">eco</span>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">Ambiance chaleureuse &amp; authentique</span>
-</div>
-</div>
-<!-- Bottom Quote Overlay -->
-<div class="absolute bottom-4 left-4 right-4 text-surface-container-lowest">
-<p class="font-headline-sm text-headline-sm italic leading-snug">
-              « Incredibilmente buona, sfornata ogni giorno dal nostro maestro pizzaiolo. »
-            </p>
-</div>
-</div>
-<!-- Information Card Underneath -->
-<div class="bg-surface-container-lowest rounded-xl shadow-md p-6 sm:p-8 space-y-6">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-2.5">
-<span class="material-symbols-outlined text-primary-container">info</span>
-<span>Informations &amp; Accueil</span>
-</h3>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
-<!-- Lunch Service -->
-<div class="flex items-start gap-3.5 p-3.5 rounded-lg bg-surface-container-low/70">
-<div class="w-9 h-9 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-xs text-secondary">
-<span class="material-symbols-outlined text-[20px]">wb_sunny</span>
-</div>
-<div>
-<p class="font-label-lg text-label-lg text-on-surface font-semibold">Service du midi</p>
-<p class="font-body-sm text-body-sm text-on-surface-variant">12h00 à 15h00</p>
-<span class="inline-block mt-1 font-label-sm text-label-sm text-secondary font-medium">Pause déjeuner &amp; détente</span>
-</div>
-</div>
-<!-- Dinner Service -->
-<div class="flex items-start gap-3.5 p-3.5 rounded-lg bg-surface-container-low/70">
-<div class="w-9 h-9 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-xs text-primary-container">
-<span class="material-symbols-outlined text-[20px]">nightlife</span>
-</div>
-<div>
-<p class="font-label-lg text-label-lg text-on-surface font-semibold">Service du soir</p>
-<p class="font-body-sm text-body-sm text-on-surface-variant">19h00 à 23h30</p>
-<span class="inline-block mt-1 font-label-sm text-label-sm text-primary-container font-medium">Lumière tamisée &amp; four allumé</span>
-</div>
-</div>
-</div>
-<!-- Large Group Notice -->
-<div class="p-4 rounded-lg bg-surface-container-high/60 space-y-2">
-<div class="flex items-center gap-2 text-on-surface">
-<span class="material-symbols-outlined text-primary text-[20px]">diversity_3</span>
-<h4 class="font-label-lg text-label-lg font-bold">Grand groupe ?</h4>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-              Pour les événements de plus de 10 personnes, contactez-nous directement par téléphone pour privatiser un espace ou composer un menu sur-mesure.
-            </p>
-<a class="inline-flex items-center gap-2 text-primary font-label-lg text-label-lg font-semibold hover:underline pt-1" href="tel:+21671890123">
-<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
-<span>+216 71 890 123</span>
-</a>
-</div>
-<!-- Small Trattoria Heritage Note -->
-<div class="flex items-center gap-3 pt-2">
-<span class="material-symbols-outlined text-secondary text-[22px]">local_fire_department</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-              Cuisson au feu de bois certifié à 480°C dans la pure tradition napolitaine.
-            </p>
-</div>
-</div>
-</aside>
-</div>
-</div>
-</div>
-<script>
-  function handleReservationSuccess() {
-    const successBox = document.getElementById('reservationSuccess');
-    if (successBox) {
-      successBox.classList.remove('hidden');
-      successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
-  }
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-inner">
+            <div class="logo-group">
+                <span class="logo-badge">📍 LA PIAZZA</span>
+                <div class="logo-text">
+                    <strong>La Piazza</strong>
+                    <small>PIZZERIA & RISTORANTE</small>
+                </div>
+            </div>
 
-  // Pre-fill today's date if empty
-  document.addEventListener('DOMContentLoaded', () => {
-    const dateInput = document.getElementById('resDate');
-    if (dateInput && !dateInput.value) {
-      const today = new Date().toISOString().split('T')[0];
-      dateInput.min = today;
-      dateInput.value = today;
-    }
-  });
-</script></main><footer class="w-full bg-inverse-surface text-inverse-on-surface pt-16 pb-8 border-t border-outline/20"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12"><div class="space-y-4"><div class="flex items-center gap-3"><span class="font-headline-md text-headline-md text-surface-container-lowest font-bold tracking-tight">La Piazza</span><div class="flex h-3 w-6 rounded-xs overflow-hidden shadow-xs shrink-0"><span class="w-1/3 h-full bg-secondary"></span><span class="w-1/3 h-full bg-surface-container-lowest"></span><span class="w-1/3 h-full bg-primary-container"></span></div></div><p class="font-body-sm text-body-sm text-surface-dim leading-relaxed">L'artisanat de la véritable pizza napolitaine cuite au feu de bois. Une cuisine d'émotion, des ingrédients d'origine certifiée et la chaleur de l'hospitalité italienne.</p><div class="flex items-center gap-3 pt-2"><a aria-label="Facebook" class="w-9 h-9 rounded-full bg-tertiary-container/40 flex items-center justify-center text-surface-container-lowest hover:bg-primary-container hover:text-on-primary-container transition-all" href="#"><span class="material-symbols-outlined text-[18px]">public</span></a><a aria-label="Instagram" class="w-9 h-9 rounded-full bg-tertiary-container/40 flex items-center justify-center text-surface-container-lowest hover:bg-primary-container hover:text-on-primary-container transition-all" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="TripAdvisor" class="w-9 h-9 rounded-full bg-tertiary-container/40 flex items-center justify-center text-surface-container-lowest hover:bg-primary-container hover:text-on-primary-container transition-all" href="#"><span class="material-symbols-outlined text-[18px]">star</span></a></div></div><div class="space-y-4"><h3 class="font-headline-sm text-headline-sm text-surface-container-lowest font-bold">Liens Rapides</h3><ul class="space-y-2.5"><li role="none"><a class="font-body-sm text-body-sm text-surface-dim hover:text-surface-container-lowest transition-colors flex items-center gap-2" data-path="accueil" href="#"><span class="material-symbols-outlined text-[14px] text-primary-fixed-dim">chevron_right</span>Accueil</a></li><li role="none"><a class="font-body-sm text-body-sm text-surface-dim hover:text-surface-container-lowest transition-colors flex items-center gap-2" data-path="notre-menu" href="#"><span class="material-symbols-outlined text-[14px] text-primary-fixed-dim">chevron_right</span>Notre Menu</a></li><li role="none"><a class="font-body-sm text-body-sm text-surface-dim hover:text-surface-container-lowest transition-colors flex items-center gap-2" data-path="reservation" href="#"><span class="material-symbols-outlined text-[14px] text-primary-fixed-dim">chevron_right</span>Réservation</a></li><li role="none"><a class="font-body-sm text-body-sm text-surface-dim hover:text-surface-container-lowest transition-colors flex items-center gap-2" data-path="contact" href="#"><span class="material-symbols-outlined text-[14px] text-primary-fixed-dim">chevron_right</span>Contact</a></li></ul></div><div class="space-y-4"><h3 class="font-headline-sm text-headline-sm text-surface-container-lowest font-bold">Horaires d'Ouverture</h3><ul class="space-y-3 font-body-sm text-body-sm text-surface-dim"><li class="flex items-start gap-2.5"><span class="material-symbols-outlined text-secondary-fixed-dim text-[18px] mt-0.5">schedule</span><div><p class="font-semibold text-surface-container-lowest">Lundi - Dimanche</p><p>Déjeuner : 12h00 - 15h00</p><p>Dîner : 19h00 - 23h30</p></div></li><li class="flex items-center gap-2.5 text-secondary-fixed"><span class="material-symbols-outlined text-[18px]">local_fire_department</span><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Four à bois allumé non-stop</span></li></ul></div><div class="space-y-4"><h3 class="font-headline-sm text-headline-sm text-surface-container-lowest font-bold">Contact &amp; Adresse</h3><ul class="space-y-3 font-body-sm text-body-sm text-surface-dim"><li class="flex items-start gap-2.5"><span class="material-symbols-outlined text-primary-fixed-dim text-[18px] mt-0.5">location_on</span><span>Avenue Habib Bourguiba, Tunis 1000, Tunisie</span></li><li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">call</span><a class="hover:text-surface-container-lowest transition-colors" href="tel:+21671890123">+216 71 890 123</a></li><li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-primary-fixed-dim text-[18px]">mail</span><a class="hover:text-surface-container-lowest transition-colors" href="mailto:contact@lapiazza.tn">contact@lapiazza.tn</a></li></ul></div></div><div class="pt-8 border-t border-outline/15 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left"><p class="font-body-sm text-body-sm text-surface-dim">© 2025 La Piazza. Tous droits réservés. Pizzeria &amp; Ristorante Italiano.</p><p class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-wider">Cucina Napoletana Autentica • Forno a Legna</p></div></div></footer></body></html>
+            <nav class="nav-links">
+                <a href="#">ACCUEIL</a>
+                <a href="#">NOTRE MENU</a>
+                <a href="#" class="active">RÉSERVATION</a>
+                <a href="#">CONTACT</a>
+            </nav>
+
+            <div class="nav-actions">
+                <span class="phone-pill">📞 +216 71 890 123</span>
+                <button class="btn-reserve">🍴 Réserver</button>
+                <span class="user-icon">👤</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Title -->
+    <section class="hero-header">
+        <div class="container">
+            <span class="badge-pill">🍴 TAVOLO & ESPERIENZA</span>
+            <h1>Réservez votre table</h1>
+            <p class="subtitle">Que ce soit pour un dîner romantique, un repas de famille ou entre amis, nous vous accueillons avec la chaleur et la passion de l'Italie.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container main-layout">
+        <!-- Left Column: Reservation Form -->
+        <section class="form-card">
+            <div class="form-header">
+                <div class="form-title-group">
+                    <span class="eyebrow">RÉSERVATION EN DIRECT</span>
+                    <h2>Détails de votre visite</h2>
+                </div>
+                <span class="calendar-badge">📅</span>
+            </div>
+
+            <form id="reservationForm">
+                <div class="form-group full-width">
+                    <label for="fullName">Nom complet *</label>
+                    <input type="text" id="fullName" placeholder="👤 Ex: Mario Rossi" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Adresse email *</label>
+                        <input type="email" id="email" placeholder="✉️ votre.email@exemple.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Numéro de téléphone *</label>
+                        <input type="tel" id="phone" placeholder="📞 +216 98 123 456" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date de réservation *</label>
+                        <input type="date" id="date" value="2026-11-17" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Heure de réservation *</label>
+                        <select id="time" required>
+                            <option value="">🕒 Choisir une heure</option>
+                            <option value="12:30">12:30 (Midi)</option>
+                            <option value="13:30">13:30 (Midi)</option>
+                            <option value="19:30">19:30 (Soir)</option>
+                            <option value="20:30">20:30 (Soir)</option>
+                            <option value="21:30">21:30 (Soir)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="guests">Nombre de personnes *</label>
+                    <select id="guests" required>
+                        <option value="">👥 Sélectionnez le nombre de convives</option>
+                        <option value="1">1 personne</option>
+                        <option value="2">2 personnes</option>
+                        <option value="4">4 personnes</option>
+                        <option value="6">6 personnes</option>
+                        <option value="8">8 personnes</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <div class="label-flex">
+                        <label for="notes">Demandes spéciales <small>(Optionnel)</small></label>
+                        <span class="hint-text">Intolérances, célébrations...</span>
+                    </div>
+                    <textarea id="notes" rows="3" placeholder="Allergies, table en terrasse, chaise bébé, occasion spéciale..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">🍴 CONFIRMER LA RÉSERVATION</button>
+                <p class="form-footer-note">🛡️ Confirmation instantanée par SMS et Email • Annulation sans frais jusqu'à 2 heures à l'avance.</p>
+            </form>
+        </section>
+
+        <!-- Right Column: Info Sidebar -->
+        <aside class="sidebar">
+            <!-- Image Card -->
+            <div class="promo-card">
+                <img src="../images/image de pizza.jpg" alt="Pizza Napolitaine">
+                <span class="promo-tag">🔥 AMBIANCE CHALEUREUSE & AUTHENTIQUE</span>
+                <div class="promo-overlay">
+                    <p>« Incredibilmente buona, sfornata ogni giorno dal nostro maestro pizzaiolo. »</p>
+                </div>
+            </div>
+
+            <!-- Hours Card -->
+            <div class="info-card">
+                <h3>🕒 Informations & Accueil</h3>
+                
+                <div class="service-box">
+                    <span class="service-icon sun">☀️</span>
+                    <div>
+                        <strong>Service du midi</strong>
+                        <p class="hours">12h00 à 15h00</p>
+                        <small>Pause déjeuner & détente</small>
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <span class="service-icon wine">🍷</span>
+                    <div>
+                        <strong>Service du soir</strong>
+                        <p class="hours">19h00 à 23h30</p>
+                        <small>Lumière tamisée & four allumé</small>
+                    </div>
+                </div>
+
+                <div class="group-notice">
+                    <strong>👥 Grand groupe ?</strong>
+                    <p>Pour les événements de plus de 10 personnes, contactez-nous directement par téléphone pour privatiser un espace ou composer un menu sur-mesure.</p>
+                    <a href="tel:+21671890123" class="group-phone">📞 +216 71 890 123</a>
+                </div>
+
+                <p class="oven-note">🔥 Cuisson au feu de bois certifié à 485°C dans la pure tradition napolitaine.</p>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4 class="footer-logo">La Piazza <span>🍕</span></h4>
+                <p>L'artisanat de la véritable pizza napolitaine cuite au feu de bois. Une cuisine d'émotion, des ingrédients d'origine certifiée et la chaleur de l'hospitalité italienne.</p>
+                <div class="socials">
+                    <span>🌐</span> <span>📸</span> <span>⭐</span>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h5>Liens Rapides</h5>
+                <ul>
+                    <li><a href="#">› Accueil</a></li>
+                    <li><a href="#">› Notre Menu</a></li>
+                    <li><a href="#">› Réservation</a></li>
+                    <li><a href="#">› Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Horaires d'Ouverture</h5>
+                <p>🕒 <strong>Lundi - Dimanche</strong></p>
+                <p>Déjeuner : 12h00 - 15h00</p>
+                <p>Dîner : 19h00 - 23h30</p>
+                <span class="open-badge">🔥 FOUR À BOIS ALLUMÉ NON-STOP</span>
+            </div>
+
+            <div class="footer-col">
+                <h5>Contact & Adresse</h5>
+                <p>📍 Avenue Habib Bourguiba, Tunis 1000, Tunisie</p>
+                <p>📞 +216 71 890 123</p>
+                <p>✉️ contact@lapiazza.tn</p>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© 2025 La Piazza. Tous droits réservés. Pizzeria & Ristorante Italiano.</span>
+            <span>CUCINA NAPOLETANA AUTENTICA • FORNO A LEGNA</span>
+        </div>
+    </footer>
+
+    <!-- JavaScript مدمج داخل HTML -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('reservationForm');
+        const reserveTopBtn = document.querySelector('.btn-reserve');
+        const dateInput = document.getElementById('date');
+
+        // منع اختيار تاريخ قديم
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+
+        // تمرير سلس للفورم
+        reserveTopBtn.addEventListener('click', function() {
+            document.getElementById('fullName').focus();
+            form.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // التثبت وإرسال الحجز
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('fullName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const date = dateInput.value;
+            const time = document.getElementById('time').value;
+            const guests = document.getElementById('guests').value;
+
+            if (name.length < 3) {
+                alert("الرجاء إدخال الاسم الكامل بشكل صحيح.");
+                return;
+            }
+
+            if (!email.includes('@') || !email.includes('.')) {
+                alert("الرجاء إدخال بريد إلكتروني صحيح.");
+                return;
+            }
+
+            if (phone.length < 8) {
+                alert("الرجاء إدخال رقم هاتف صحيح.");
+                return;
+            }
+
+            alert(`Grazie ${name} ! 🍕\nVotre table pour ${guests} personne(s) est réservée le ${date} à ${time}.\nConfirmation envoyée à ${email}.`);
+            form.reset();
+        });
+    });
+</script>
+</body>
+</html>

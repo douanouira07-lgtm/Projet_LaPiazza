@@ -1,1087 +1,213 @@
+<!--HTML permet de créer la structure de la page web-->
 <!DOCTYPE html>
-
 <html lang="fr">
   <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="web_standard" name="shell-type" />
-    <title>La Piazza - Trattoria &amp; Pizzeria Napoletana</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      @layer base {
-        html,
-        body {
-          margin: 0;
-          padding: 0;
-        }
-        body {
-          overscroll-behavior: none;
-        }
-        main > :first-child {
-          margin-top: 0 !important;
-        }
-        main > :last-child {
-          margin-bottom: 0 !important;
-        }
-      }
-      ::-webkit-scrollbar {
-        display: none;
-      }
-    </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "surface-tint": "#b02d1c",
-              "on-surface": "#2a170f",
-              error: "#ba1a1a",
-              "on-primary-fixed": "#400200",
-              "on-secondary-container": "#347139",
-              "surface-bright": "#fff8f6",
-              "on-tertiary-fixed-variant": "#474743",
-              "inverse-primary": "#ffb4a7",
-              "on-tertiary": "#ffffff",
-              background: "#fff8f6",
-              "outline-variant": "#e1bfb9",
-              surface: "#fff8f6",
-              "secondary-container": "#b0f3ad",
-              "surface-variant": "#ffdbce",
-              "on-secondary-fixed-variant": "#12521e",
-              tertiary: "#575753",
-              "surface-container-lowest": "#ffffff",
-              "surface-container": "#ffe9e2",
-              "inverse-on-surface": "#ffede7",
-              "error-container": "#ffdad6",
-              "on-error-container": "#93000a",
-              "primary-container": "#c83e2b",
-              "tertiary-fixed-dim": "#c8c6c2",
-              "inverse-surface": "#422b22",
-              "tertiary-container": "#706f6b",
-              "surface-container-high": "#ffe2d8",
-              "surface-container-low": "#fff1ec",
-              secondary: "#2e6b34",
-              "on-error": "#ffffff",
-              "on-secondary": "#ffffff",
-              "surface-dim": "#f8d2c4",
-              "on-primary-container": "#fff0ee",
-              "on-primary-fixed-variant": "#8e1306",
-              "on-surface-variant": "#59413d",
-              "primary-fixed-dim": "#ffb4a7",
-              primary: "#a62515",
-              "on-background": "#2a170f",
-              "on-secondary-fixed": "#002106",
-              "tertiary-fixed": "#e5e2dd",
-              "on-tertiary-fixed": "#1c1c19",
-              "secondary-fixed": "#b0f3ad",
-              "on-primary": "#ffffff",
-              "secondary-fixed-dim": "#95d693",
-              "on-tertiary-container": "#f6f3ee",
-              "surface-container-highest": "#ffdbce",
-              "primary-fixed": "#ffdad4",
-              outline: "#8d706b",
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px",
-            },
-            spacing: {
-              "space-xl": "2.5rem",
-              "space-lg": "1.5rem",
-              margin: "3rem",
-              "gutter-mobile": "1rem",
-              gutter: "1.5rem",
-              "margin-mobile": "1.25rem",
-              "space-xs": "0.25rem",
-              "space-md": "1rem",
-              "space-sm": "0.5rem",
-            },
-            fontFamily: {
-              "label-lg": ["Plus Jakarta Sans"],
-              "label-sm": ["Plus Jakarta Sans"],
-              "headline-sm": ["Playfair Display"],
-              "headline-lg-mobile": ["Playfair Display"],
-              "headline-xl-mobile": ["Playfair Display"],
-              "body-sm": ["Plus Jakarta Sans"],
-              "body-md": ["Plus Jakarta Sans"],
-              "label-md": ["Plus Jakarta Sans"],
-              "headline-md": ["Playfair Display"],
-              "body-lg": ["Plus Jakarta Sans"],
-              "headline-xl": ["Playfair Display"],
-              "headline-lg": ["Playfair Display"],
-            },
-            fontSize: {
-              "label-lg": [
-                "0.875rem",
-                {
-                  lineHeight: "1.25rem",
-                  letterSpacing: "0.04em",
-                  fontWeight: "600",
-                },
-              ],
-              "label-sm": [
-                "0.6875rem",
-                {
-                  lineHeight: "0.875rem",
-                  letterSpacing: "0.08em",
-                  fontWeight: "500",
-                },
-              ],
-              "headline-sm": [
-                "1.25rem",
-                {
-                  lineHeight: "1.75rem",
-                  letterSpacing: "0.01em",
-                  fontWeight: "600",
-                },
-              ],
-              "headline-lg-mobile": [
-                "1.75rem",
-                {
-                  lineHeight: "2.25rem",
-                  letterSpacing: "0em",
-                  fontWeight: "600",
-                },
-              ],
-              "headline-xl-mobile": [
-                "2.25rem",
-                {
-                  lineHeight: "2.75rem",
-                  letterSpacing: "-0.01em",
-                  fontWeight: "600",
-                },
-              ],
-              "body-sm": [
-                "0.875rem",
-                {
-                  lineHeight: "1.25rem",
-                  letterSpacing: "0.005em",
-                  fontWeight: "400",
-                },
-              ],
-              "body-md": [
-                "1rem",
-                {
-                  lineHeight: "1.5rem",
-                  letterSpacing: "0em",
-                  fontWeight: "400",
-                },
-              ],
-              "label-md": [
-                "0.75rem",
-                {
-                  lineHeight: "1rem",
-                  letterSpacing: "0.06em",
-                  fontWeight: "600",
-                },
-              ],
-              "headline-md": [
-                "1.75rem",
-                {
-                  lineHeight: "2.25rem",
-                  letterSpacing: "0em",
-                  fontWeight: "600",
-                },
-              ],
-              "body-lg": [
-                "1.125rem",
-                {
-                  lineHeight: "1.75rem",
-                  letterSpacing: "0em",
-                  fontWeight: "400",
-                },
-              ],
-              "headline-xl": [
-                "3.5rem",
-                {
-                  lineHeight: "4rem",
-                  letterSpacing: "-0.02em",
-                  fontWeight: "600",
-                },
-              ],
-              "headline-lg": [
-                "2.5rem",
-                {
-                  lineHeight: "3rem",
-                  letterSpacing: "-0.015em",
-                  fontWeight: "600",
-                },
-              ],
-            },
-          },
-        },
-      };
-    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Piazza | Contactez-nous</title>
+    <link rel="stylesheet" href="../css/cssContact/style.css" />
+    <link rel="stylesheet" href="../css/cssContact/flexbox.css" />
+    <link rel="stylesheet" href="../css/cssContact/grid.css" />
   </head>
-  <body class="bg-surface text-on-surface antialiased">
-    <header
-      class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_2px_12px_rgba(44,24,16,0.06)] border-b border-outline-variant/40"
-    >
-      <div
-        class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"
-      >
-        <div class="flex items-center gap-3">
-          <img
-            alt="Logo La Piazza"
-            class="h-8 w-auto object-contain"
-            src="https://lh3.googleusercontent.com/aida/ALJJyrBu0dmG4FDdSzdcMZZQ7yH67Lq7DWZAuUj_2b3Hc5jgay7qsDanWP65FvlAuxyd1vDpOTxZ0hWQXczcZqaGAcLfV6p39HV0fBPCjtJC49eEa9LpWxDl4M2q7dD_8rw5fJd45_3-lwuK5i6yABCzpSE-vk42cyjbXY17KtP3Pi3hahsKo3gVVPxh_D0N6NxlLUd81j7o4J2o-DtOq458PORSm1BClCGpzgUUipuoVXo"
-          />
-          <div class="flex flex-col">
-            <span
-              class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight leading-none"
-              >La Piazza</span
-            ><span
-              class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold mt-0.5"
-              >Pizzeria &amp; Ristorante</span
-            >
-          </div>
-        </div>
-        <nav
-          class="hidden lg:flex items-center gap-2"
-          data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg px-3 py-1.5 shadow-sm"
-        >
-          <a
-            class="px-3 py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded-lg"
-            data-path="accueil"
-            href="#"
-            >ACCUEIL</a
-          ><a
-            class="px-3 py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded-lg"
-            data-path="notre-menu"
-            href="#"
-            >NOTRE MENU</a
-          ><a
-            class="px-3 py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded-lg"
-            data-path="reservation"
-            href="#"
-            >RÉSERVATION</a
-          ><a
-            aria-current="page"
-            class="transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg px-3 py-1.5 shadow-sm"
-            data-path="contact"
-            href="#"
-            >CONTACT</a
-          >
+  <body class="mode-grid">
+    <!-- En-tête : header-->
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="logo" href="#accueil"><span>●</span> 🍕LA PIAZZA</a>
+
+        <nav class="main-nav">
+          <a href="#accueil">ACCUEIL</a>
+          <a href="#menu">NOTRE MENU</a>
+          <a href="#reservation">RÉSERVATION</a>
+          <a href="#contact">CONTACT</a>
         </nav>
-        <div class="flex items-center gap-4">
-          <a
-            class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors"
-            href="tel:+21671890123"
-            ><span class="material-symbols-outlined text-[18px] text-secondary"
-              >call</span
-            ><span
-              class="font-label-sm text-label-sm font-semibold tracking-wider"
-              >+216 71 890 123</span
-            ></a
-          ><a
-            class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg tracking-wide hover:bg-primary transition-all shadow-sm active:scale-95"
-            data-path="reservation"
-            href="#"
-            ><span class="material-symbols-outlined text-[18px] mr-1.5"
-              >table_restaurant</span
-            >Réserver</a
-          >
-          <div
-            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"
-          >
-            <span class="material-symbols-outlined text-on-primary text-[18px]"
-              >person</span
-            >
-          </div>
-        </div>
+
+        <a class="phone-button" href="tel:+21671890123">☎ +216 71 890 123</a>
       </div>
     </header>
-    <main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
-      <div class="flex flex-col w-full">
-        <!-- Page Header -->
-        <section
-          class="relative px-6 lg:px-12 pt-12 pb-8 max-w-7xl mx-auto w-full"
-        >
-          <div class="flex flex-col max-w-3xl">
-            <div class="inline-flex items-center gap-2 mb-3">
-              <span class="w-8 h-0.5 bg-primary-container"></span>
-              <span
-                class="font-label-md text-label-md uppercase text-secondary font-bold tracking-widest"
-                >Trattoria &amp; Pizzeria Napoletana</span
-              >
-            </div>
-            <h1
-              class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight"
-            >
-              Contactez-nous
-            </h1>
-            <p
-              class="font-body-lg text-body-lg text-on-surface-variant mt-4 leading-relaxed"
-            >
-              Une question, une privatisation ou un événement particulier ?
-              Notre équipe est à votre écoute avec le sourire.
-            </p>
-          </div>
-        </section>
-        <!-- Main Grid Section -->
-        <section class="px-6 lg:px-12 pb-24 max-w-7xl mx-auto w-full">
-          <div
-            class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start"
-          >
-            <!-- Left Column: Restaurant Info Cards (7 cols on desktop) -->
-            <div class="lg:col-span-7 flex flex-col gap-6">
-              <!-- Card 1: Coordonnées & Téléphone -->
-              <article
-                class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 shadow-sm"
-              >
-                <div class="flex items-center gap-3 mb-6">
-                  <div
-                    class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary-container shrink-0"
-                  >
-                    <span class="material-symbols-outlined text-[26px]"
-                      >contact_phone</span
-                    >
-                  </div>
-                  <div>
-                    <span
-                      class="font-label-sm text-label-sm text-secondary uppercase font-semibold"
-                      >Service &amp; Renseignements</span
-                    >
-                    <h2
-                      class="font-headline-sm text-headline-sm text-on-surface font-bold"
-                    >
-                      Coordonnées &amp; Téléphone
-                    </h2>
-                  </div>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div
-                    class="bg-surface rounded-lg p-4 flex flex-col justify-between"
-                  >
-                    <div>
-                      <span
-                        class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium"
-                        >Ligne Fixe Directe</span
-                      >
-                      <p
-                        class="font-body-lg text-body-lg font-bold text-on-surface mt-1"
-                      >
-                        +216 71 890 123
-                      </p>
-                    </div>
-                    <a
-                      class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary-container hover:text-primary mt-3 font-semibold transition-colors"
-                      href="tel:+21671890123"
-                    >
-                      <span class="material-symbols-outlined text-[16px]"
-                        >call</span
-                      >
-                      Appeler maintenant
-                    </a>
-                  </div>
-                  <div
-                    class="bg-surface rounded-lg p-4 flex flex-col justify-between"
-                  >
-                    <div>
-                      <span
-                        class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium"
-                        >Mobile &amp; WhatsApp</span
-                      >
-                      <p
-                        class="font-body-lg text-body-lg font-bold text-on-surface mt-1"
-                      >
-                        +216 98 456 789
-                      </p>
-                    </div>
-                    <a
-                      class="inline-flex items-center gap-1.5 font-label-md text-label-md text-secondary hover:text-on-secondary-container mt-3 font-semibold transition-colors"
-                      href="https://wa.me/21698456789"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <span class="material-symbols-outlined text-[16px]"
-                        >chat</span
-                      >
-                      Écrire sur WhatsApp
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="mt-4 pt-4 bg-surface-container-low/60 rounded-lg p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3"
-                >
-                  <div class="flex items-center gap-3">
-                    <span
-                      class="material-symbols-outlined text-primary-container text-[22px]"
-                      >mail</span
-                    >
-                    <div>
-                      <span
-                        class="font-label-sm text-label-sm text-on-surface-variant"
-                        >Courriel officiel</span
-                      >
-                      <p
-                        class="font-body-md text-body-md font-semibold text-on-surface"
-                      >
-                        contact@lapiazza.tn
-                      </p>
-                    </div>
-                  </div>
-                  <a
-                    class="px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold shadow-sm hover:bg-surface-container transition-all"
-                    href="mailto:contact@lapiazza.tn"
-                  >
-                    Écrire un e-mail
-                  </a>
-                </div>
-              </article>
-              <!-- Card 2: Adresse & Localisation -->
-              <article
-                class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 shadow-sm"
-              >
-                <div class="flex items-center gap-3 mb-5">
-                  <div
-                    class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary-container shrink-0"
-                  >
-                    <span class="material-symbols-outlined text-[26px]"
-                      >pin_drop</span
-                    >
-                  </div>
-                  <div>
-                    <span
-                      class="font-label-sm text-label-sm text-secondary uppercase font-semibold"
-                      >Venir nous voir</span
-                    >
-                    <h2
-                      class="font-headline-sm text-headline-sm text-on-surface font-bold"
-                    >
-                      Adresse &amp; Localisation
-                    </h2>
-                  </div>
-                </div>
-                <div class="space-y-3 mb-5">
-                  <p
-                    class="font-body-lg text-body-lg font-semibold text-on-surface flex items-start gap-2"
-                  >
-                    <span
-                      class="material-symbols-outlined text-primary-container text-[20px] mt-0.5"
-                      >location_on</span
-                    >
-                    14 bis, Avenue Habib Bourguiba, 1001 Tunis, Tunisie
-                  </p>
-                  <div
-                    class="flex items-start gap-2 bg-surface-container-low p-3.5 rounded-lg"
-                  >
-                    <span
-                      class="material-symbols-outlined text-secondary text-[20px] mt-0.5"
-                      >local_parking</span
-                    >
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface-variant"
-                    >
-                      <strong class="text-on-surface font-semibold"
-                        >Accès &amp; Stationnement :</strong
-                      >
-                      Parking réservé à la clientèle disponible en face du
-                      restaurant avec voiturier en soirée.
-                    </p>
-                  </div>
-                </div>
-                <!-- Stylized Google Map Container with Red and Green accents -->
-                <div
-                  class="relative w-full h-56 rounded-xl overflow-hidden shadow-inner group"
-                >
-                  <div
-                    class="w-full h-full bg-cover bg-center"
-                    data-location="14 bis Avenue Habib Bourguiba, Tunis, Tunisie"
-                    style="
-                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1NYymfRty98_XwPC6HM33rXTEP2OenZWn7jwipZ0lpA-tOhax07jS9GVG1t25_PBX32HsZSjiaaJlzW13FJCGflhk2CC6VdowTQf7Rt7FU0FmkpsDwYMM6erxPXVW-0gp3kvZiUKLd2QGKWK00PgEttgCCaUEI5BXWqctX8ZH5KvxI2TUoamq048i4_B7bMYHma-gIzmkHV9rM03oOfITLmMO0uH7TQbH-l30bw');
-                    "
-                  ></div>
-                  <!-- Interactive Map Overlay Badge -->
-                  <div
-                    class="absolute bottom-3 left-3 bg-surface-container-lowest/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-md flex items-center gap-3"
-                  >
-                    <div class="flex items-center gap-1.5">
-                      <span
-                        class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"
-                      ></span>
-                      <span
-                        class="w-2.5 h-2.5 rounded-full bg-secondary"
-                      ></span>
-                    </div>
-                    <span
-                      class="font-label-sm text-label-sm font-bold text-on-surface"
-                      >Cœur de Tunis • Centre-Ville</span
-                    >
-                  </div>
-                  <a
-                    class="absolute top-3 right-3 bg-surface-container-lowest text-primary-container hover:bg-primary-container hover:text-on-primary-container transition-all px-3 py-1.5 rounded-md font-label-sm text-label-sm font-semibold shadow-sm flex items-center gap-1"
-                    href="https://maps.google.com"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <span>Itinéraire</span>
-                    <span class="material-symbols-outlined text-[16px]"
-                      >open_in_new</span
-                    >
-                  </a>
-                </div>
-              </article>
-              <!-- Card 3: Horaires d'ouverture -->
-              <article
-                class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 shadow-sm"
-              >
-                <div class="flex items-center gap-3 mb-6">
-                  <div
-                    class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary-container shrink-0"
-                  >
-                    <span class="material-symbols-outlined text-[26px]"
-                      >schedule</span
-                    >
-                  </div>
-                  <div>
-                    <span
-                      class="font-label-sm text-label-sm text-secondary uppercase font-semibold"
-                      >Table &amp; Forno</span
-                    >
-                    <h2
-                      class="font-headline-sm text-headline-sm text-on-surface font-bold"
-                    >
-                      Horaires d'Ouverture
-                    </h2>
-                  </div>
-                </div>
-                <div class="space-y-4">
-                  <div
-                    class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-lg bg-surface gap-2"
-                  >
-                    <div class="flex items-center gap-2.5">
-                      <span
-                        class="material-symbols-outlined text-secondary text-[20px]"
-                        >calendar_today</span
-                      >
-                      <span
-                        class="font-body-md text-body-md font-semibold text-on-surface"
-                        >Lundi - Vendredi</span
-                      >
-                    </div>
-                    <div
-                      class="flex items-center gap-3 font-body-sm text-body-sm text-on-surface-variant font-medium"
-                    >
-                      <span
-                        class="bg-surface-container-lowest px-2.5 py-1 rounded"
-                        >12h00 - 15h00</span
-                      >
-                      <span>&amp;</span>
-                      <span
-                        class="bg-surface-container-lowest px-2.5 py-1 rounded"
-                        >19h00 - 23h30</span
-                      >
-                    </div>
-                  </div>
-                  <div
-                    class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-lg bg-surface-container-low/70 gap-2"
-                  >
-                    <div class="flex items-center gap-2.5">
-                      <span
-                        class="material-symbols-outlined text-primary-container text-[20px]"
-                        >weekend</span
-                      >
-                      <div>
-                        <span
-                          class="font-body-md text-body-md font-bold text-on-surface"
-                          >Samedi &amp; Dimanche</span
-                        >
-                        <span
-                          class="block font-label-sm text-label-sm text-secondary font-semibold"
-                          >Service continu le soir</span
-                        >
-                      </div>
-                    </div>
-                    <div
-                      class="font-body-md text-body-md font-bold text-primary-container bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-xs"
-                    >
-                      12h00 - 23h45
-                    </div>
-                  </div>
-                </div>
-              </article>
-              <!-- Card 4: Suivez-nous sur les Réseaux Sociaux -->
-              <article
-                class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 shadow-sm"
-              >
-                <div class="flex items-center gap-3 mb-5">
-                  <div
-                    class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary-container shrink-0"
-                  >
-                    <span class="material-symbols-outlined text-[26px]"
-                      >share</span
-                    >
-                  </div>
-                  <div>
-                    <span
-                      class="font-label-sm text-label-sm text-secondary uppercase font-semibold"
-                      >Communauté &amp; Passion</span
-                    >
-                    <h2
-                      class="font-headline-sm text-headline-sm text-on-surface font-bold"
-                    >
-                      Suivez-nous sur les Réseaux
-                    </h2>
-                  </div>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                  <!-- Instagram -->
-                  <a
-                    class="group flex items-center gap-3 p-3.5 rounded-lg bg-surface hover:bg-primary-container transition-all duration-200"
-                    href="https://instagram.com/lapiazza.tn"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <div
-                      class="w-9 h-9 rounded-full bg-surface-container-lowest group-hover:bg-on-primary-container flex items-center justify-center text-primary-container group-hover:text-primary transition-colors shrink-0"
-                    >
-                      <span class="material-symbols-outlined text-[18px]"
-                        >photo_camera</span
-                      >
-                    </div>
-                    <div class="min-w-0">
-                      <p
-                        class="font-label-md text-label-md font-bold text-on-surface group-hover:text-on-primary-container"
-                      >
-                        Instagram
-                      </p>
-                      <p
-                        class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-primary-container/80 truncate"
-                      >
-                        @lapiazza.tn
-                      </p>
-                    </div>
-                  </a>
-                  <!-- Facebook -->
-                  <a
-                    class="group flex items-center gap-3 p-3.5 rounded-lg bg-surface hover:bg-primary-container transition-all duration-200"
-                    href="https://facebook.com/lapiazza.tn"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <div
-                      class="w-9 h-9 rounded-full bg-surface-container-lowest group-hover:bg-on-primary-container flex items-center justify-center text-primary-container group-hover:text-primary transition-colors shrink-0"
-                    >
-                      <span class="material-symbols-outlined text-[18px]"
-                        >public</span
-                      >
-                    </div>
-                    <div class="min-w-0">
-                      <p
-                        class="font-label-md text-label-md font-bold text-on-surface group-hover:text-on-primary-container"
-                      >
-                        Facebook
-                      </p>
-                      <p
-                        class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-primary-container/80 truncate"
-                      >
-                        /lapiazza.tn
-                      </p>
-                    </div>
-                  </a>
-                  <!-- TripAdvisor -->
-                  <a
-                    class="group flex items-center gap-3 p-3.5 rounded-lg bg-surface hover:bg-secondary transition-all duration-200"
-                    href="https://tripadvisor.com"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <div
-                      class="w-9 h-9 rounded-full bg-surface-container-lowest group-hover:bg-on-secondary flex items-center justify-center text-secondary group-hover:text-secondary-fixed-dim transition-colors shrink-0"
-                    >
-                      <span class="material-symbols-outlined text-[18px]"
-                        >star</span
-                      >
-                    </div>
-                    <div class="min-w-0">
-                      <p
-                        class="font-label-md text-label-md font-bold text-on-surface group-hover:text-on-secondary"
-                      >
-                        TripAdvisor
-                      </p>
-                      <p
-                        class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-secondary/80 truncate"
-                      >
-                        Avis &amp; Notes
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </article>
-            </div>
-            <!-- Right Column: Simple Contact Form (5 cols on desktop) -->
-            <div class="lg:col-span-5 lg:sticky lg:top-28">
-              <div class="bg-surface-container-lowest rounded-xl p-8 shadow-md">
-                <div class="mb-6">
-                  <span
-                    class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider"
-                    >Formulaire Direct</span
-                  >
-                  <h2
-                    class="font-headline-md text-headline-md text-on-surface font-bold mt-1"
-                  >
-                    Envoyez-nous un message
-                  </h2>
-                  <p
-                    class="font-body-sm text-body-sm text-on-surface-variant mt-1.5"
-                  >
-                    Remplissez les détails ci-dessous et nous prendrons contact
-                    avec vous très rapidement.
-                  </p>
-                </div>
-                <form
-                  class="space-y-5"
-                  id="contactForm"
-                  onsubmit="event.preventDefault(); document.getElementById('formSuccess').classList.remove('hidden'); this.reset();"
-                >
-                  <!-- Nom -->
-                  <div>
-                    <label
-                      class="block font-label-md text-label-md font-semibold text-on-surface mb-2"
-                      for="contactName"
-                    >
-                      Nom complet <span class="text-primary-container">*</span>
-                    </label>
-                    <div class="relative">
-                      <span
-                        class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[20px] text-tertiary"
-                        >person</span
-                      >
-                      <input
-                        class="w-full pl-11 pr-4 py-3 rounded-lg bg-surface text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary-container transition-all"
-                        id="contactName"
-                        name="name"
-                        placeholder="Votre nom complet"
-                        required=""
-                        type="text"
-                      />
-                    </div>
-                  </div>
-                  <!-- Email -->
-                  <div>
-                    <label
-                      class="block font-label-md text-label-md font-semibold text-on-surface mb-2"
-                      for="contactEmail"
-                    >
-                      Adresse e-mail
-                      <span class="text-primary-container">*</span>
-                    </label>
-                    <div class="relative">
-                      <span
-                        class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[20px] text-tertiary"
-                        >mail</span
-                      >
-                      <input
-                        class="w-full pl-11 pr-4 py-3 rounded-lg bg-surface text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary-container transition-all"
-                        id="contactEmail"
-                        name="email"
-                        placeholder="nom@exemple.com"
-                        required=""
-                        type="email"
-                      />
-                    </div>
-                  </div>
-                  <!-- Sujet -->
-                  <div>
-                    <label
-                      class="block font-label-md text-label-md font-semibold text-on-surface mb-2"
-                      for="contactSubject"
-                    >
-                      Sujet de votre demande
-                      <span class="text-primary-container">*</span>
-                    </label>
-                    <div class="relative">
-                      <span
-                        class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[20px] text-tertiary pointer-events-none"
-                        >list_alt</span
-                      >
-                      <select
-                        class="w-full pl-11 pr-10 py-3 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container appearance-none cursor-pointer transition-all"
-                        id="contactSubject"
-                        name="subject"
-                        required=""
-                      >
-                        <option disabled="" selected="" value="">
-                          Sélectionnez un sujet
-                        </option>
-                        <option value="Demande d'information">
-                          Demande d'information
-                        </option>
-                        <option value="Privatisation &amp; Événement">
-                          Privatisation &amp; Événement
-                        </option>
-                        <option value="Catering / Traiteur">
-                          Catering / Traiteur
-                        </option>
-                        <option value="Autre question">Autre question</option>
-                      </select>
-                      <span
-                        class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-[20px] text-tertiary pointer-events-none"
-                        >expand_more</span
-                      >
-                    </div>
-                  </div>
-                  <!-- Message -->
-                  <div>
-                    <label
-                      class="block font-label-md text-label-md font-semibold text-on-surface mb-2"
-                      for="contactMessage"
-                    >
-                      Message <span class="text-primary-container">*</span>
-                    </label>
-                    <textarea
-                      class="w-full p-4 rounded-lg bg-surface text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary-container resize-none transition-all"
-                      id="contactMessage"
-                      name="message"
-                      placeholder="Écrivez votre message ici..."
-                      required=""
-                      rows="5"
-                    ></textarea>
-                  </div>
-                  <!-- Feedback Message -->
-                  <div
-                    class="hidden p-3.5 rounded-lg bg-secondary-container text-on-secondary-fixed-variant font-body-sm text-body-sm flex items-center gap-2"
-                    id="formSuccess"
-                  >
-                    <span class="material-symbols-outlined text-[20px]"
-                      >check_circle</span
-                    >
-                    <span
-                      >Grazie ! Votre message a bien été envoyé avec
-                      succès.</span
-                    >
-                  </div>
-                  <!-- Submit Button -->
-                  <button
-                    class="w-full py-3.5 px-6 rounded-lg bg-primary-container hover:bg-primary text-on-primary-container font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm transition-all duration-200 active:scale-[0.99] cursor-pointer"
-                    type="submit"
-                  >
-                    <span>Envoyer le message</span>
-                    <span class="material-symbols-outlined text-[18px]"
-                      >send</span
-                    >
-                  </button>
-                  <!-- Fast reply guarantee -->
-                  <div
-                    class="flex items-center justify-center gap-2 pt-2 text-on-surface-variant font-label-sm text-label-sm"
-                  >
-                    <span
-                      class="material-symbols-outlined text-secondary text-[16px]"
-                      >verified</span
-                    >
-                    <span>Nous vous répondons sous 24h ouvrées.</span>
-                  </div>
-                </form>
+
+    <!--le contenu principal de la page(main)-->
+    <main class="page-container" id="accueil">
+      <div class="page-heading">
+        <p class="eyebrow">— TRATTORIA & PIZZERIA NAPOLITANA</p>
+        <h1>Contactez-nous</h1>
+        <p class="intro-text">
+          Une question, une réservation ou un événement particulier ? Notre
+          équipe est à votre écoute avec le sourire.
+        </p>
+      </div>
+
+      <div class="content-layout">
+        <!-- Colonne gauche -->
+        <div class="left-column">
+          <section class="panel contact-details">
+            <p class="eyebrow">SERVICE & RENSEIGNEMENTS</p>
+            <h2>Coordonnées & Téléphone</h2>
+
+            <div class="phone-cards">
+              <div class="soft-card">
+                <p class="small-title">LIGNE FIXE DIRECTE</p>
+                <strong>+216 71 890 123</strong>
+                <span class="red-note">● Appel direct</span>
+              </div>
+              <div class="soft-card">
+                <p class="small-title">MOBILE & WHATSAPP</p>
+                <strong>+216 25 48 76 32</strong>
+                <span class="red-note">WhatsApp</span>
               </div>
             </div>
-          </div>
+
+            <div class="soft-card email-card">
+              <p class="small-title">✉ Courriel officiel</p>
+              <strong>contact@lapiazza.tn</strong>
+              <a href="mailto:contact@lapiazza.tn">Écrire un email</a>
+            </div>
+          </section>
+
+          <section class="panel location-panel">
+            <p class="eyebrow">VENIR NOUS VOIR</p>
+            <h2>Adresse & Localisation</h2>
+            <p class="address-line">
+              📍 14 Av. Habib Bourguiba, 1001 Tunis, Tunisie
+            </p>
+            <div class="parking-note">
+              ▣ Accès & Stationnement : Parking réservé à la clientèle
+              disponible en face du restaurant.
+            </div>
+            <iframe
+              class="map-frame"
+              title="Carte - La Piazza à Tunis"
+              src="https://www.google.com/maps?q=14%20Av.%20Habib%20Bourguiba%2C%20Tunis%2C%20Tunisia&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </section>
+
+          <section class="panel hours-panel">
+            <p class="eyebrow">HORAIRES</p>
+            <h2>Nos Horaires</h2>
+            <div class="soft-card hours-card">
+              <strong>▦ Lundi - Vendredi</strong>
+              <span>12h00 - 15h00</span>
+              <span>19h00 - 23h30</span>
+            </div>
+            <div class="soft-card hours-card">
+              <strong>Samedi & Dimanche</strong>
+              <span>12h00 - 23h45</span>
+              <span>Service continu le soir</span>
+            </div>
+          </section>
+
+          <section class="panel social-panel">
+            <p class="eyebrow">COMMUNAUTÉ & PASSION</p>
+            <h2>Suivez-nous sur les Réseaux</h2>
+            <div class="social-links">
+              <a href="https://instagram.com/lapiazza.tn"
+                ><strong>📷 Instagram</strong><span>@lapiazza.tn</span></a
+              >
+              <a href="https://facebook.com/lapiazza.tn"
+                ><strong>🌐 Facebook</strong><span>/lapiazza.tn</span></a
+              >
+              <a href="https://tripadvisor.com"
+                ><strong>⭐ TripAdvisor</strong><span>TripAdvisor</span></a
+              >
+            </div>
+          </section>
+        </div>
+
+        <!-- Colonne droite : formulaire -->
+        <section class="panel form-panel" id="contact">
+          <p class="eyebrow">FORMULAIRE DIRECT</p>
+          <h2>Envoyez-nous un message</h2>
+          <p class="form-description">
+            Remplissez les détails ci-dessous et nous prendrons contact avec
+            vous très rapidement.
+          </p>
+
+          <form id="contactForm">
+            <label for="name">Nom complet *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Votre nom complet"
+              required
+            />
+
+            <label for="email">Adresse email *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="nom@exemple.com"
+              required
+            />
+
+            <label for="subject">Sujet de votre demande *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Sélectionnez un sujet</option>
+              <option value="reservation">Réservation</option>
+              <option value="information">Demande d'information</option>
+              <option value="event">Événement particulier</option>
+              <option value="other">Autre</option>
+            </select>
+
+            <label for="message">Message *</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Écrivez votre message ici..."
+              required
+            ></textarea>
+
+            <button type="submit">Envoyer le message &gt;</button>
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+          </form>
         </section>
       </div>
     </main>
-    <footer
-      class="w-full bg-inverse-surface text-inverse-on-surface pt-16 pb-8 border-t border-outline/20"
-    >
-      <div class="max-w-7xl mx-auto px-6 lg:px-12">
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12"
-        >
-          <div class="space-y-4">
-            <div class="flex items-center gap-3">
-              <span
-                class="font-headline-md text-headline-md text-surface-container-lowest font-bold tracking-tight"
-                >La Piazza</span
-              >
-              <div
-                class="flex h-3 w-6 rounded-xs overflow-hidden shadow-xs shrink-0"
-              >
-                <span class="w-1/3 h-full bg-secondary"></span
-                ><span class="w-1/3 h-full bg-surface-container-lowest"></span
-                ><span class="w-1/3 h-full bg-primary-container"></span>
-              </div>
-            </div>
-            <p
-              class="font-body-sm text-body-sm text-surface-dim leading-relaxed"
-            >
-              L'artisanat de la véritable pizza napolitaine cuite au feu de
-              bois. Une cuisine d'émotion, des ingrédients d'origine certifiée
-              et la chaleur de l'hospitalité italienne.
-            </p>
-            <div class="flex items-center gap-3 pt-2">
-              <a
-                aria-label="Facebook"
-                class="w-9 h-9 rounded-full bg-tertiary-container/40 flex items-center justify-center text-surface-container-lowest hover:bg-primary-container hover:text-on-primary-container transition-all"
-                href="#"
-                ><span class="material-symbols-outlined text-[18px]"
-                  >public</span
-                ></a
-              ><a
-                aria-label="Instagram"
-                class="w-9 h-9 rounded-full bg-tertiary-container/40 flex items-center justify-center text-surface-container-lowest hover:bg-primary-container hover:text-on-primary-container transition-all"
-                href="#"
-                ><span class="material-symbols-outlined text-[18px]"
-                  >photo_camera</span
-                ></a
-              ><a
-                aria-label="TripAdvisor"
-                class="w-9 h-9 rounded-full bg-tertiary-container/40 flex items-center justify-center text-surface-container-lowest hover:bg-primary-container hover:text-on-primary-container transition-all"
-                href="#"
-                ><span class="material-symbols-outlined text-[18px]"
-                  >star</span
-                ></a
-              >
-            </div>
-          </div>
-          <div class="space-y-4">
-            <h3
-              class="font-headline-sm text-headline-sm text-surface-container-lowest font-bold"
-            >
-              Liens Rapides
-            </h3>
-            <ul class="space-y-2.5">
-              <li role="none">
-                <a
-                  class="font-body-sm text-body-sm text-surface-dim hover:text-surface-container-lowest transition-colors flex items-center gap-2"
-                  data-path="accueil"
-                  href="#"
-                  ><span
-                    class="material-symbols-outlined text-[14px] text-primary-fixed-dim"
-                    >chevron_right</span
-                  >Accueil</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  class="font-body-sm text-body-sm text-surface-dim hover:text-surface-container-lowest transition-colors flex items-center gap-2"
-                  data-path="notre-menu"
-                  href="#"
-                  ><span
-                    class="material-symbols-outlined text-[14px] text-primary-fixed-dim"
-                    >chevron_right</span
-                  >Notre Menu</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  class="font-body-sm text-body-sm text-surface-dim hover:text-surface-container-lowest transition-colors flex items-center gap-2"
-                  data-path="reservation"
-                  href="#"
-                  ><span
-                    class="material-symbols-outlined text-[14px] text-primary-fixed-dim"
-                    >chevron_right</span
-                  >Réservation</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  class="font-body-sm text-body-sm text-surface-dim hover:text-surface-container-lowest transition-colors flex items-center gap-2"
-                  data-path="contact"
-                  href="#"
-                  ><span
-                    class="material-symbols-outlined text-[14px] text-primary-fixed-dim"
-                    >chevron_right</span
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="space-y-4">
-            <h3
-              class="font-headline-sm text-headline-sm text-surface-container-lowest font-bold"
-            >
-              Horaires d'Ouverture
-            </h3>
-            <ul class="space-y-3 font-body-sm text-body-sm text-surface-dim">
-              <li class="flex items-start gap-2.5">
-                <span
-                  class="material-symbols-outlined text-secondary-fixed-dim text-[18px] mt-0.5"
-                  >schedule</span
-                >
-                <div>
-                  <p class="font-semibold text-surface-container-lowest">
-                    Lundi - Dimanche
-                  </p>
-                  <p>Déjeuner : 12h00 - 15h00</p>
-                  <p>Dîner : 19h00 - 23h30</p>
-                </div>
-              </li>
-              <li class="flex items-center gap-2.5 text-secondary-fixed">
-                <span class="material-symbols-outlined text-[18px]"
-                  >local_fire_department</span
-                ><span
-                  class="font-label-sm text-label-sm uppercase tracking-wider font-semibold"
-                  >Four à bois allumé non-stop</span
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="space-y-4">
-            <h3
-              class="font-headline-sm text-headline-sm text-surface-container-lowest font-bold"
-            >
-              Contact &amp; Adresse
-            </h3>
-            <ul class="space-y-3 font-body-sm text-body-sm text-surface-dim">
-              <li class="flex items-start gap-2.5">
-                <span
-                  class="material-symbols-outlined text-primary-fixed-dim text-[18px] mt-0.5"
-                  >location_on</span
-                ><span>Avenue Habib Bourguiba, Tunis 1000, Tunisie</span>
-              </li>
-              <li class="flex items-center gap-2.5">
-                <span
-                  class="material-symbols-outlined text-primary-fixed-dim text-[18px]"
-                  >call</span
-                ><a
-                  class="hover:text-surface-container-lowest transition-colors"
-                  href="tel:+21671890123"
-                  >+216 71 890 123</a
-                >
-              </li>
-              <li class="flex items-center gap-2.5">
-                <span
-                  class="material-symbols-outlined text-primary-fixed-dim text-[18px]"
-                  >mail</span
-                ><a
-                  class="hover:text-surface-container-lowest transition-colors"
-                  href="mailto:contact@lapiazza.tn"
-                  >contact@lapiazza.tn</a
-                >
-              </li>
-            </ul>
-          </div>
+    <!--fin le contenu principal de la page-->
+
+    <!-- Pied de page (footer)-->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-about">
+          <h3>🍕La Piazza</h3>
+          <p>
+            L'essentiel de la véritable pizza napolitaine avec du feu de bois.
+            Une cuisine d'émotion, des ingrédients d'origine contrôlée.
+          </p>
         </div>
-        <div
-          class="pt-8 border-t border-outline/15 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left"
-        >
-          <p class="font-body-sm text-body-sm text-surface-dim">
-            © 2025 La Piazza. Tous droits réservés. Pizzeria &amp; Ristorante
-            Italiano.
-          </p>
-          <p
-            class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-wider"
-          >
-            Cucina Napoletana Autentica • Forno a Legna
-          </p>
+
+        <div>
+          <h3>Liens Rapides</h3>
+          <a href="#accueil">› Accueil</a>
+          <a href="#menu">› Notre Menu</a>
+          <a href="#reservation">› Réservation</a>
+          <a href="#contact">› Contact</a>
+        </div>
+
+        <div>
+          <h3>Horaires d'Ouverture</h3>
+          <p>Lundi - Dimanche</p>
+          <p>Déjeuner : 12h00 - 15h00</p>
+          <p>Dîner : 19h00 - 23h30</p>
+        </div>
+
+        <div>
+          <h3>Contact & Adresse</h3>
+          <p>📍 Avenue Habib Bourguiba, Tunis</p>
+          <p>☎ +216 71 890 123</p>
+          <p>✉ contact@lapiazza.tn</p>
         </div>
       </div>
+      <div class="copyright">
+        © 2025 La Piazza🍕. Tous droits réservés. Pizzeria & Ristorante Italiano.
+      </div>
     </footer>
+
+    <script src="../js/javascript.js"></script>
   </body>
 </html>

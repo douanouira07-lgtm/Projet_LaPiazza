@@ -1,0 +1,42 @@
+/* =========================================================
+   3) CSS GRID
+   ========================================================= */
+
+   body.mode-grid .topbar-inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+}
+
+body.mode-grid .main-nav {
+    text-align: center;
+}
+
+body.mode-grid .phone-button {
+    justify-self: end;
+}
+
+body.mode-grid .content-layout {
+    display: grid;
+    grid-template-columns: 1.45fr 1fr;
+    gap: 12px;
+    align-items: stretch;
+}
+
+body.mode-grid .phone-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+body.mode-grid .social-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+body.mode-grid .footer-inner {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
+    gap: 25px;
+}

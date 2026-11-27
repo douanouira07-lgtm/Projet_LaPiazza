@@ -1,0 +1,53 @@
+/* =========================================================
+   2) FLEXBOX
+   ========================================================= */
+
+   body.mode-flexbox .topbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+body.mode-flexbox .content-layout {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+}
+
+body.mode-flexbox .left-column {
+    flex: 1.45;
+    min-width: 0;
+}
+
+body.mode-flexbox .form-panel {
+    flex: 1;
+}
+
+body.mode-flexbox .phone-cards {
+    display: flex;
+    gap: 8px;
+}
+
+body.mode-flexbox .phone-cards .soft-card {
+    flex: 1;
+}
+
+body.mode-flexbox .social-links {
+    display: flex;
+    gap: 8px;
+}
+
+body.mode-flexbox .social-links a {
+    flex: 1;
+}
+
+body.mode-flexbox .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+body.mode-flexbox .footer-inner > div {
+    flex: 1;
+}

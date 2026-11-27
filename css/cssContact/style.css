@@ -1,0 +1,543 @@
+/* CSS permet de styliser la page web : couleurs, tailles, espacements et disposition des éléments */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #34221c;
+    background: #fff8f5;
+    font-size: 14px;
+}
+
+a {
+    color: inherit;
+}
+
+.topbar {
+    background: #ffffff;
+    border-bottom: 1px solid #eadfd9;
+    min-height: 58px;
+}
+
+.topbar-inner {
+    width: 86%;
+    max-width: 1450px;
+    min-height: 58px;
+    margin: auto;
+}
+
+.logo {
+    color: #c73525;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .3px;
+}
+
+.logo span {
+    color: #ed315b;
+    font-size: 10px;
+    vertical-align: 2px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #5c4a43;
+    font: 9px Arial, sans-serif;
+    margin: 0 9px;
+}
+
+.main-nav a:hover {
+    color: #c73525;
+}
+
+.phone-button {
+    display: inline-block;
+    padding: 9px 15px;
+    color: #fff;
+    background: #c93b2a;
+    border-radius: 4px;
+    text-decoration: none;
+    font: bold 10px Arial, sans-serif;
+}
+
+.page-container {
+    width: 86%;
+    max-width: 1450px;
+    margin: 28px auto 34px;
+}
+
+.page-heading {
+    margin-bottom: 23px;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: #a58d82;
+    font: 9px Arial, sans-serif;
+    letter-spacing: .35px;
+    text-transform: uppercase;
+}
+
+.page-heading h1 {
+    margin: 0 0 8px;
+    color: #2e1e18;
+    font-size: 31px;
+    line-height: 1.1;
+}
+
+.intro-text, .form-description {
+    margin: 0;
+    color: #806e65;
+    font-size: 12px;
+}
+
+.panel {
+    background: #fff;
+    border: 1px solid #f0e7e2;
+    border-radius: 9px;
+    padding: 18px;
+    box-shadow: 0 2px 5px rgba(66, 37, 25, .06);
+    min-width: 0;
+}
+
+.panel h2 {
+    margin: 0 0 12px;
+    color: #38231b;
+    font-size: 18px;
+}
+
+.left-column .panel {
+    margin-bottom: 12px;
+}
+
+.phone-cards {
+    margin-bottom: 8px;
+}
+
+.soft-card {
+    background: #fff7f4;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.small-title {
+    margin: 0 0 7px;
+    color: #967e73;
+    font: 9px Arial, sans-serif;
+}
+
+.soft-card strong {
+    display: block;
+    font-size: 11px;
+}
+
+.red-note {
+    display: block;
+    margin-top: 5px;
+    color: #c33a29;
+    font: 9px Arial, sans-serif;
+}
+
+.email-card {
+    min-height: 55px;
+}
+
+.email-card strong {
+    margin: 2px 0;
+}
+
+.email-card a {
+    display: block;
+    color: #bf3829;
+    font: 10px Arial, sans-serif;
+}
+
+.address-line {
+    margin: 0 0 12px;
+    font-size: 11px;
+}
+
+.parking-note {
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #7d5140;
+    background: #fff0e9;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+.map-frame {
+    display: block;
+    width: 100%;
+    height: 125px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.hours-card {
+    margin-bottom: 8px;
+    min-height: 58px;
+}
+
+.hours-card:last-child {
+    margin-bottom: 0;
+}
+
+.hours-card strong {
+    margin-bottom: 5px;
+}
+
+.hours-card span {
+    display: block;
+    margin-top: 3px;
+    color: #806e65;
+    font-size: 10px;
+}
+
+.social-links a {
+    display: block;
+    padding: 12px 8px;
+    background: #fff7f4;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.social-links a:hover {
+    background: #ffede6;
+}
+
+.social-links strong, .social-links span {
+    display: block;
+}
+
+.social-links span {
+    margin-top: 3px;
+    color: #927d73;
+    font-size: 9px;
+}
+
+/* Formulaire */
+.form-panel {
+    min-height: 100%;
+}
+
+.form-panel h2 {
+    margin-bottom: 8px;
+}
+
+.form-description {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.form-panel label {
+    display: block;
+    margin: 12px 0 6px;
+    color: #59463e;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.form-panel input,
+.form-panel select,
+.form-panel textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ecdcd4;
+    border-radius: 4px;
+    background: #fffaf8;
+    color: #45332c;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+.form-panel textarea {
+    min-height: 105px;
+    resize: vertical;
+}
+
+.form-panel input:focus,
+.form-panel select:focus,
+.form-panel textarea:focus {
+    outline: 2px solid #e9b5a8;
+}
+
+.form-panel button {
+    width: 100%;
+    margin-top: 14px;
+    padding: 11px;
+    border: 0;
+    border-radius: 4px;
+    background: #c83b2a;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-panel button:hover {
+    background: #a92e20;
+}
+
+.form-message {
+    color: #2e6b34;
+    font: bold 11px Arial, sans-serif;
+}
+
+/* Footer commun */
+.site-footer {
+    padding: 28px 0 14px;
+    background: #40271e;
+    color: #fff3ed;
+}
+
+.footer-inner {
+    width: 86%;
+    max-width: 1450px;
+    margin: auto;
+}
+
+.site-footer h3 {
+    margin: 0 0 12px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.site-footer p,
+.site-footer a {
+    margin: 0 0 7px;
+    color: #e2d1c8;
+    font-size: 10px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.site-footer a {
+    display: block;
+}
+
+.site-footer a:hover {
+    color: #fff;
+}
+
+.footer-about p {
+    max-width: 290px;
+}
+
+.copyright {
+    width: 86%;
+    max-width: 1450px;
+    margin: 20px auto 0;
+    padding-top: 13px;
+    border-top: 1px solid rgba(255,255,255,.16);
+    color: #d9c5ba;
+    text-align: center;
+    font-size: 9px;
+}
+
+/* =========================================================
+   1) CSS ORIGINAL
+   Utilise inline-block et float, sans Flexbox ni Grid.
+   ========================================================= */
+
+body.mode-original .topbar-inner {
+    position: relative;
+    padding: 18px 0;
+    text-align: center;
+}
+
+body.mode-original .logo {
+    float: left;
+}
+
+body.mode-original .phone-button {
+    float: right;
+    margin-top: -5px;
+}
+
+body.mode-original .main-nav {
+    display: inline-block;
+    padding-top: 3px;
+}
+
+body.mode-original .content-layout {
+    overflow: hidden;
+}
+
+body.mode-original .left-column {
+    float: left;
+    width: 58%;
+}
+
+body.mode-original .form-panel {
+    float: right;
+    width: 40.8%;
+}
+
+body.mode-original .phone-cards {
+    overflow: hidden;
+}
+
+body.mode-original .phone-cards .soft-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+
+body.mode-original .social-links {
+    overflow: hidden;
+}
+
+body.mode-original .social-links a {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+}
+
+body.mode-original .footer-inner {
+    overflow: hidden;
+}
+
+body.mode-original .footer-inner > div {
+    float: left;
+    width: 25%;
+}
+
+body.mode-original .site-footer {
+    overflow: hidden;
+}
+
+body.mode-original .content-layout::after,
+body.mode-original .footer-inner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* Responsive pour les 3 méthodes */
+@media (max-width: 800px) {
+    body.mode-original .left-column,
+    body.mode-original .form-panel {
+        float: none;
+        width: 100%;
+    }
+
+    body.mode-flexbox .content-layout {
+        flex-direction: column;
+    }
+
+    body.mode-grid .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    body.mode-original .footer-inner > div {
+        width: 50%;
+        margin-bottom: 18px;
+    }
+
+    body.mode-flexbox .footer-inner {
+        flex-wrap: wrap;
+    }
+
+    body.mode-flexbox .footer-inner > div {
+        flex-basis: 40%;
+    }
+
+    body.mode-grid .footer-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .topbar-inner {
+        width: 92%;
+    }
+
+    .page-container,
+    .footer-inner,
+    .copyright {
+        width: 92%;
+    }
+}
+
+@media (max-width: 560px) {
+    body.mode-original .topbar-inner,
+    body.mode-flexbox .topbar-inner,
+    body.mode-grid .topbar-inner {
+        text-align: center;
+        padding: 14px 0;
+    }
+
+    body.mode-original .logo,
+    body.mode-original .phone-button {
+        float: none;
+        display: inline-block;
+        margin: 5px;
+    }
+
+    body.mode-flexbox .topbar-inner {
+        flex-direction: column;
+    }
+
+    body.mode-grid .topbar-inner {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    body.mode-grid .phone-button {
+        justify-self: center;
+    }
+
+    .main-nav {
+        margin: 10px 0;
+    }
+
+    .page-heading h1 {
+        font-size: 27px;
+    }
+
+    body.mode-original .phone-cards .soft-card {
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    body.mode-flexbox .phone-cards {
+        flex-direction: column;
+    }
+
+    body.mode-grid .phone-cards,
+    body.mode-grid .social-links {
+        grid-template-columns: 1fr;
+    }
+
+    body.mode-original .social-links a {
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    body.mode-flexbox .social-links {
+        flex-direction: column;
+    }
+
+    body.mode-original .footer-inner > div {
+        float: none;
+        width: 100%;
+    }
+
+    body.mode-flexbox .footer-inner {
+        flex-direction: column;
+    }
+
+    body.mode-grid .footer-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .panel {
+        padding: 15px;
+    }
+}
